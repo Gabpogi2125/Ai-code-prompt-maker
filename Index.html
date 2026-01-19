@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Code Prompt Maker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>AI Code Prompt Maker</h1>
+
+  <p>Credits: <span id="credits">5</span> / 5</p>
+
+  <textarea id="botDesc" placeholder="Describe the bot you want..." rows="6"></textarea>
+  <br>
+
+  <button onclick="generatePrompt()">Generate Prompt (-1 Credit)</button>
+  <button onclick="downloadTemplates()">Download Templates</button>
+  <br><br>
+
+  <textarea id="aiPrompt" rows="10" readonly placeholder="Your AI prompt will appear here..."></textarea>
+  <br>
+  <button onclick="copyPrompt()">Copy Prompt</button>
+
+  <h3>Paid Plan</h3>
+  <p>Unlimited prompts for $5. Enter your key:</p>
+  <input type="text" id="paidKey" placeholder="Enter paid key">
+  <button onclick="activatePaidKey()">Activate Key</button>
+
+  <p><a href="tos.html" target="_blank">Terms of Service</a></p>
+
+  <script src="app.js"></script>
+</body>
+</html>
